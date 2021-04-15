@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html/css/jsProject_1</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: green;
+
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid black;
+            font-size: 25px;
+            color: ivory;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            background: green;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+            margin: 10px;
+
+        }
+
+        a {
+            display: block;
+            margin-bottom: 5px 10px;
+            color: blue;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            color: ivory;
+            background: green;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+            transition: all 200ms ease-in-out;
+
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px 60px;
+
+        }
+
+        button:hover {
+            text-decoration: underline;
+            opacity: 0.6;
+            cursor: pointer;
+
+        }
+
+        .footer {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            My passion for the Environment
+        </h1>
+        <h2>
+            Save Trees and Forests
+        </h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78Ah19Jp0NhAkzsqP7PTZhFwWw9yBrbtpLA&usqp=CAU"
+            alt="Environment Protection" width="500" />
+        <p>
+            Protecting forests helps to fight global warming, protect biodiversity, and ... Tropical forest trees, like
+            all green
+            plants, take in carbon dioxide and ... But the problem cannot be solved if the role of tropical
+            deforestation is
+            ignored.
+            <br />
+
+
+            <a href="https://www.ucsusa.org/resources/tropical-deforestation-and-global-warming" target="_blank">
+
+                Find more information at this link
+            </a>
+
+        </p>
+        <button class="protect-button">
+            <strong>
+                Protect & Donate
+
+            </strong>
+        </button>
+        <p class="footer">
+            This page was created by Mandeep k kalsi
+        </p>
+    </div>
+
+    <script>
+        function protect() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            let emoji = prompt("What is your favorite tree?");
+            alert(
+                "Thank you" + " " + name + "! We'll get in touch by email");
+
+        }
+        let protectButton = document.querySelector(".protect-button");
+        protectButton.addEventListener("click", protect);
+    </script>
+</body>
+
+</html>
